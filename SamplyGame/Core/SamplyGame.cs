@@ -41,7 +41,7 @@ namespace SamplyGame
 		{
 			base.Start();
 			CreateScene();
-			Input.SubscribeToKeyDown(e =>
+			Input.KeyDown += (e =>
 			{
 				if (e.Key == Key.Esc) Exit();
 				if (e.Key == Key.C) AddCollisionDebugBox(scene, true);
