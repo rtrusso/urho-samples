@@ -22,7 +22,7 @@ namespace SamplyGame.Desktop
 
 			var result = new SamplyGame(options).Run();
 			Console.WriteLine($"Exit with status {result}");
-			Console.ReadLine();
+			Environment.Exit(result);
 		}
 	}
 }
